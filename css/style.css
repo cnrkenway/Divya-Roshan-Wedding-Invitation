@@ -2,7 +2,13 @@
    Sabarynad & smrithy · Traditional Kerala Hindu Wedding Reception
    Pure HTML5 + CSS3 + Vanilla JS. No frameworks.
    ============================================================ */
-
+html, 
+body, 
+.scene:first-of-type, 
+.cover {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 /* ---------- 1 · TOKENS ---------- */
 :root {
   --ivory: #FBF7EF;
