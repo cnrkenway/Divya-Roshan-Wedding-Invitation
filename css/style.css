@@ -2,11 +2,31 @@
    Sabarynad & smrithy · Traditional Kerala Hindu Wedding Reception
    Pure HTML5 + CSS3 + Vanilla JS. No frameworks.
    ============================================================ */
-body, 
+html, 
+body {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  /* Updated body background from dark to light so no black gap shows behind header */
+  background: var(--ivory, #FBF7EF) !important; 
+}
+
 .scene:first-of-type, 
 .cover {
   margin-top: 0 !important;
   padding-top: 0 !important;
+}
+
+/* Push top cover card flush to the absolute ceiling if needed */
+.cover-img, 
+.cover-card {
+  margin-top: -20px !important;
+}
+
+/* ---------- FIX 3: FLEXBOX TOP ALIGNMENT ---------- */
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
 }
 /* ---------- 1 · TOKENS ---------- */
 :root {
