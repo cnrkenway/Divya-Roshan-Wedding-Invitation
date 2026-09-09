@@ -3468,20 +3468,3 @@ body.finale-particles .finale-fallback {
 }
 /* PASTE AT THE VERY BOTTOM OF STYLE.CSS */
 
-/* Remove top gap and start page flush at the top ceiling */
-.cover,
-.envelope,
-.scene--cover {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-}
-
-/* Force inner card/hero elements to stick to the top */
-.cover-card,
-.envelope-card,
-.scene--cover > * {
-  margin-top: 0 !important;
-  top: 0 !important;
-}
